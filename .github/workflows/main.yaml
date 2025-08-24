@@ -19,10 +19,9 @@ jobs:
   integration:
     runs-on: ubuntu-22.04
     steps:
-      script:
-        - echo "This is an integration step"
-        - exit 1
-      allow_failure: true
+        - run: echo "This is an integration step"
+        - run: exit 1
+    continue-on-error: true
         
 
 
