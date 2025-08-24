@@ -23,7 +23,6 @@ jobs:
         - echo "This is an integration step"
         - exit 1
       allow_failure: true
-        exit_codes: 1
         
 
 
