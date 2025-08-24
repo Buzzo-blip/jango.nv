@@ -25,9 +25,10 @@ jobs:
 
   artifact:
     runs-on: ubuntu-22.04
+    outputs:
+     output1: ${{steps.outputs.txt}}
     steps:
       - run: echo “hello” > hello.txt
-    name: hello.txt
 
   prod:
     runs-on: ubuntu-22.04
