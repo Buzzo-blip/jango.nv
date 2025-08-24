@@ -1,9 +1,6 @@
 name: Django                                  # workflow name
 
 on:
-  merge:
-    branches:
-      - main
   push:
     branches:                                 # similar to "only" in GitLab
       - main
